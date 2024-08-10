@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Elderly Care Clinic | Professional Care in Bangkok</title>
+    <meta name="description" content="Sunshine Elderly Care Clinic offers comprehensive, professional care for seniors in Bangkok. Experience our personalized approach to elderly care.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3B82F6;
+            --secondary-color: #F0F9FF;
+            --text-color: #1F2937;
+            --bg-color: #FFFFFF;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-image: linear-gradient(rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.8)), url('https://images.unsplash.com/photo-1576765608866-5b51046452be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            margin: 0;
+            line-height: 1.2;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        .info-box {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .info-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .info-box h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #2563EB;
+            transform: scale(1.05);
+        }
+        .testimonials {
+            margin-top: 60px;
+        }
+        .testimonial {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .testimonial:hover {
+            transform: translateX(10px);
+        }
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .feature-list li:hover {
+            transform: translateX(5px);
+        }
+        .feature-list li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sunshine Elderly Care Clinic</h1>
+            <p class="tagline">Professional and Compassionate Senior Care in Bangkok</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="info-box">
+                <h2>Our Services</h2>
+                <ul class="feature-list">
+                    <li>24/7 Nursing Care</li>
+                    <li>Physical Therapy</li>
+                    <li>Memory Care Programs</li>
+                    <li>Nutritional Meal Plans</li>
+                    <li>Social Activities</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Why Choose Us</h2>
+                <ul class="feature-list">
+                    <li>Experienced Care Team</li>
+                    <li>Personalized Care Plans</li>
+                    <li>Modern Facilities</li>
+                    <li>Family Involvement</li>
+                    <li>Transparent Communication</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Contact Us</h2>
+                <p>📍 123 Care Lane, Bangkok 10110</p>
+                <p>📞 +66 2 123 4567</p>
+                <p>✉️ info@sunshineclinic.eldo.care</p>
+                <p><strong>Visiting Hours:</strong><br>
+                Monday - Sunday: 9:00 AM - 8:00 PM</p>
+            </div>
+        </div>
+        <div class="testimonials">
+            <h2>What Families Say</h2>
+            <div class="testimonial">
+                <p>"The care and attention my father receives at Sunshine Clinic has given our family peace of mind. The staff is truly dedicated."</p>
+                <p class="testimonial-author">- Sarah T.</p>
+            </div>
+            <div class="testimonial">
+                <p>"Choosing Sunshine Clinic for my mother was one of the best decisions we've made. The quality of care is exceptional."</p>
+                <p class="testimonial-author">- Michael L.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="#" class="cta-button">Schedule a Visit</a>
+        </div>
+    </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NursingHome",
+      "name": "Sunshine Elderly Care Clinic",
+      "description": "Professional elderly care services in Bangkok, offering personalized care and a supportive community.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Care Lane",
+        "addressLocality": "Bangkok",
+        "postalCode": "10110",
+        "addressCountry": "TH"
+      },
+      "telephone": "+66 2 123 4567",
+      "openingHours": "Mo-Su 09:00-20:00",
+      "image": "https://images.unsplash.com/photo-1576765608866-5b51046452be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    }
+    </script>
+</body>
+</html>
